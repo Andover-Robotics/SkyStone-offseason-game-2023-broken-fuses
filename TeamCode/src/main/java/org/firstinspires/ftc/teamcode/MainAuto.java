@@ -1,4 +1,10 @@
 package org.firstinspires.ftc.teamcode;
 
-public class MainAuto {
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
+public class MainAuto extends LinearOpMode {
+    @Override
+    public void runOpMode() throws InterruptedException {
+
+    }
 }
