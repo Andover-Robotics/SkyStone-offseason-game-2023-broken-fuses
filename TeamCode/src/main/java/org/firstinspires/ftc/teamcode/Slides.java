@@ -13,10 +13,11 @@ public class Slides {
     double i=1;
     double d= 1;
     double f=1;
+
     private final PIDFController controller = new PIDFController(p, i, d, f);;
     private final double positionCoefficent=0.05;
     private final Motor slides;
-    public Slides(OpMode opMode) {
+    public Slides() {
         slides = new Motor(hardwareMap, "motorTwo", Motor.GoBILDA.RPM_312);
         slides.setPositionTolerance(2);
         slides.setRunMode(Motor.RunMode.PositionControl);

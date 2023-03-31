@@ -13,7 +13,7 @@ public class Claw{
 
     private boolean isOpen=false;
 
-    public Claw(OpMode opMode){
+    public Claw(){
          claw= new SimpleServo (
                 hardwareMap, "servo_name", close, open);
         claw.setPosition(open);
