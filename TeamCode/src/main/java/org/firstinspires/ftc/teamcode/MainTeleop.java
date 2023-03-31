@@ -8,11 +8,11 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name="MainTeleop", group="teleop")
 public class MainTeleop extends LinearOpMode {
-    Telemetry telementry;
+    Telemetry telemetry;
     @Override
     public void runOpMode() {
-        telementry.addData("Status", "Initialized");
-        telementry.update();
+        telemetry.addData("Status", "Initialized");
+        telemetry.update();
         //make the MechanumDrive
         DcMotor FR_motor = hardwareMap.get(DcMotor.class, "FR_motor");
         DcMotor FL_motor = hardwareMap.get(DcMotor.class, "FL_motor");
@@ -26,11 +26,12 @@ public class MainTeleop extends LinearOpMode {
         FL_motor.setDirection(DcMotor.Direction.REVERSE);
         BL_motor.setDirection(DcMotor.Direction.REVERSE);
         waitForStart();
-        telementry.addData("Status", "Running");
-        telementry.update();
+        telemetry.addData("Status", "Running");
+        telemetry.update();
         while(opModeIsActive()) {
             
         }
+
     }
 }
 
