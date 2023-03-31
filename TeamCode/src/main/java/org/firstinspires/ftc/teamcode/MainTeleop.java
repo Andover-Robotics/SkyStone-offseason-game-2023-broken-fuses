@@ -6,8 +6,6 @@ public class MainTeleop extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
         while (opModeIsActive() && !isStopRequested()) {
-
         }
-
     }
 }
