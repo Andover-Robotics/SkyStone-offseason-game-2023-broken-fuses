@@ -9,13 +9,13 @@ import com.qualcomm.robotcore.hardware.Servo;
 public class Claw{
     private final double close=1;
     private final double open=0;
-    private final ServoEx claw = new SimpleServo(
-            hardwareMap, "servo_name", close, open
-    );
+    private final ServoEx claw;
 
     private boolean isOpen=false;
 
     public Claw(OpMode opMode){
+         claw= new SimpleServo (
+                hardwareMap, "servo_name", close, open);
         claw.setPosition(open);
     }
     public void open(){
