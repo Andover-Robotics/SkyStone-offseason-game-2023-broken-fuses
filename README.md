@@ -1,3 +1,3 @@
 ## mission
-Hi I'm nathan and im a very cringy child
+Hi I'm nathan and I'm super cool and everyone likes me all of the time. 
 :)
